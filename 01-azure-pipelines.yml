@@ -21,4 +21,10 @@ stages:
         SourceFolder: '$(System.DefaultWorkingDirectory)'
         Contents: '**'
         TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    - task: Docker@2
+      inputs:
+        containerRegistry: 'Viswa'
+        repository: 'viswanatha/sai'
+        command: 'buildAndPush'
+        Dockerfile: '**/Dockerfile'
 
