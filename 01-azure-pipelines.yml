@@ -28,3 +28,10 @@ stages:
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
 
+  - stage: Deploystage
+    jobs:
+    - job: DeployJob
+      steps:
+      - bash: echo deployjob
+    
+
