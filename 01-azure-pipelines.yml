@@ -5,11 +5,11 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
-stages:
-- stage:
-   jobs:
-   - job : Hello world
-     steps:
-     - script: echo Hello, world!
 
-       displayName: 'Run a one-line script'
+
+stages:
+- stage: Build
+  jobs:
+  - job: BuildJob
+    steps:
+    - bash: echo "Do the build"
