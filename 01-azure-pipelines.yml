@@ -16,4 +16,9 @@ stages:
     - bash: echo  $(newveriable)
     - bash: echo  $(calss)
     - bash:  ls -R $(System.DefaultWorkingDirectory)
+    - task: CopyFiles@2
+      inputs:
+        SourceFolder: '$(System.DefaultWorkingDirectory)'
+        Contents: '**'
+        TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
