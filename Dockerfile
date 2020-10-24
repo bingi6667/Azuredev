@@ -1,2 +1,2 @@
-FORM tomcat:8.5
+FROM tomcat:8.5
 
