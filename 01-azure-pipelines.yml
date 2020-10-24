@@ -14,3 +14,4 @@ stages:
     steps:
     - bash: echo "Do the build"
     - bash: $(newveriable)
+    - bash: $(calss)
