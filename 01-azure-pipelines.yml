@@ -15,5 +15,5 @@ stages:
     - bash: echo "Do the build"
     - bash: echo  $(newveriable)
     - bash: echo  $(calss)
-    - bash:  ls -R $(Build.ArtifactStagingDirectory)
+    - bash:  ls -R $(System.DefaultWorkingDirectory)
 
