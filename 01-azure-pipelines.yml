@@ -13,5 +13,5 @@ stages:
   - job: BuildJob
     steps:
     - bash: echo "Do the build"
-    - bash: $(newveriable)
-    - bash: $(calss)
+    - bash: echo  $(newveriable)
+    - bash: echo  $(calss)
